@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5</title>
+</head>
+<body>
+	<video src="media/flowers.mp4" autoplay type="video/mp4" id="video">
+	</video>
+	<br>
+	<input type="button" name="" value="Play" onclick="playMedia()">
+	<input type="button" name="" value="Pause" onclick="puaseMedia()">
+
+	<script type="text/javascript">
+		function playMedia()
+		{
+			var video = document.getElementsByTagName("video")[0];
+			video.play();
+		}
+		function puaseMedia()
+		{
+			var video = document.getElementsByTagName("video")[0];
+			video.pause();
+		}
+	</script>
+</body>
+</html>
